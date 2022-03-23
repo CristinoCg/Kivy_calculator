@@ -1,0 +1,125 @@
+#:kivy 2.0.0
+<Button>
+    size_hint: (0.1, 0.1)
+    background_normal: ''
+    background_color: (32/255, 33/255, 36/255)
+    
+    
+    
+
+<Calculadora>
+    BoxLayout:
+        size: root.width, root.height
+        orientation: 'vertical'
+        TextInput:
+            id: conteudo
+            multiline: False
+            font_size: 32
+            size_hint: (1, 0.2)
+            focus: True
+            halign: 'right'
+            
+        GridLayout:
+            cols: 4
+            rows: 4
+
+            Button:
+                text: '7'
+                var: '7'
+                on_press: root.insert(self.var)
+                
+            Button:
+                text: '8'
+                var: '8'
+                on_press: root.insert(self.var)
+            Button:
+                text: '9'
+                var: '9'
+                on_press: root.insert(self.var)
+            GridLayout:
+                cols: 1
+                rows: 2
+                size_hint: (0.1, 0.1)
+             
+                Button:
+                    text: 'DEL'
+                    color:(138/255, 180/255, 248/255)
+                    on_press: root.delete()
+                    size_hint:(0.1,0.1)
+                Button:
+                    text: 'C'
+                    color:(138/255, 180/255, 248/255)
+                    on_press: root.clear()
+                    size_hint:(0.1,0.1)
+          
+            Button:
+                text: '4'
+                var: '4'
+                on_press: root.insert(self.var)
+            Button:
+                text: '5'
+                var: '5'
+                on_press: root.insert(self.var)
+            Button:
+                text: '6'
+                var: '6'
+                on_press: root.insert(self.var)
+            GridLayout:
+                cols: 1
+                rows: 2
+                size_hint: (0.1, 0.15)
+                Button:
+                    text: '*'
+                    var: '*'
+                    on_press: root.insert(self.var)
+                    color:(138/255, 180/255, 248/255)
+                    
+                Button:
+                    text: '/'
+                    var: '/'
+                    on_press: root.insert(self.var)
+                    color:(138/255, 180/255, 248/255)
+            Button:
+                text: '1'
+                var: '1'
+                on_press: root.insert(self.var)
+            Button:
+                text: '2'
+                var: '2'
+                on_press: root.insert(self.var)
+            Button:
+                text: '3'
+                var: '3'
+                on_press: root.insert(self.var)
+            Button:
+                text: '-'
+                var: '-'
+                
+                on_press: root.insert(self.var)
+                color:(138/255, 180/255, 248/255)
+            Button:
+                text: '0'
+                var: '0'
+                on_press: root.insert(self.var)
+            Button:
+                font_size: 40
+                text: '.'
+                var: '.'
+                on_press: root.insert(self.var)
+            Button:
+                text: '='                
+                on_press: root.equal()
+                
+                #on_press: root.insert(var)
+            Button:
+                id: lilb
+                text: '+'
+                var: '+'
+                
+                on_press: root.insert(self.var)
+                color:(138/255, 180/255, 248/255)
+            
+        
+
+
+    
