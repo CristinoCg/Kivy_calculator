@@ -1,2 +1,2 @@
-#Kivy Calculator GUI 
+# Kivy Calculator GUI 
 This a kivy study 
