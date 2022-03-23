@@ -28,7 +28,7 @@ class Calculadora(Widget):
             else:
                 return
 
-        print('Bumbou, ', self.counter )
+        #print('Bumbou, ', self.counter )
 
     def clear(self):
         self.ids.conteudo.foreground_color = (0,0,0)
